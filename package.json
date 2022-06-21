@@ -1,0 +1,25 @@
+{
+  "name": "@tinymce/antora-extension-livedemos",
+  "version": "0.0.1",
+  "description": "An Antora enxtension which enables live demos for TinyMCE doc",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "author": "Ephox Corporation DBA Tiny Technologies, Inc.",
+  "keywords": [
+    "Antora",
+    "extension",
+    "live",
+    "demos",
+    "livedemos",
+    "tinymce",
+    "doc"
+  ],
+  "homepage": "https://github.com/tinymce/antora-extension-livedemos#readme",
+  "dependencies": {
+    "liquidjs": "^9.37.0"
+  }
+}
