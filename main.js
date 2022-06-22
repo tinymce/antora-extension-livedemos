@@ -2,43 +2,6 @@
 
 const { Liquid } = require('liquidjs');
 
-/**
- Macro: liveDemo::<demo>[]
- such as:
-
- ```
- liveDemo::classic[]
- ```
-
- Makes an embedded editor example with tabs, including an "Edit on CodePen" tab.
-
- params:
-
- id (required). Picks folder for files, and used in css classes.
- type (optional) - Specifies if the example is `tinymce` or `tinydrive` specific default is `tinymce`
- tab (optional - default to "run"), "run", "html", "css" or "js". The first tab to open.
- height (optional - no default). min-height in pixels.
- script_url_override (optional - no default).
- - Override the full tinymce.min.js URL, including api key.
- - Useful for testing things that aren't in the main channel, yet.
- - Remove this setting once the feature is in the main channel.
-
- Files required under live-demos/id/
-
- index.html
- index.js
- index.css optional file
- example.js optional file
- example.html optional file
-
- if index.css is omitted, the css tab will not display
-
- example.js purpose:
- when the file is present the live-demo js tab will display the contents of example.js, while the real demo code executes with index.js
- Useful for when we want to hide actual api-keys or tokens: 'example-token'.
- When the example.js file is present, the link to the external codepen site is disabled
- */
-
 const templateCache = {};
 
 const validContent = {
