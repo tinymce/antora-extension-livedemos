@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true,
-  "license": "SEE LICENSE IN LICENSE.txt",
+  "license": "MIT",
   "author": "Ephox Corporation DBA Tiny Technologies, Inc.",
   "keywords": [
     "Antora",
@@ -19,6 +18,9 @@
     "doc"
   ],
   "homepage": "https://github.com/tinymce/antora-extension-livedemos#readme",
+  "bugs": {
+    "url": "https://github.com/tinymce/antora-extension-livedemos/issues"
+  },
   "dependencies": {
     "liquidjs": "^9.37.0"
   }
