@@ -1,0 +1,6 @@
+node_modules
+/scratch
+/*.log
+*.sublime-workspace
+package-lock.json
+yarn-error.log
