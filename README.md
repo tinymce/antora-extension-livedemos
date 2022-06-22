@@ -43,4 +43,4 @@ When the file is present the live-demo js tab will display the contents of `exam
     - Useful for testing things that aren't in the main channel, yet
     - Remove this setting once the feature is in the main channel
 
-**Note**: Optional parameters are comma separated `parameter=value` pairs and in the square bracket after `id`.
+**Note**: Provide optional parameters in coma separated name-value pairs into the square bracket following `id`.
