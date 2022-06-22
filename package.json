@@ -4,9 +4,9 @@
   "description": "Maintains an Antora enxtension which enables live demos for TinyMCE documentation",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"No-ops\" && exit 0",
-    "build": "rm -rf dist && mkdir dist && cp -r live-demos main.js package.json README.md dist",
-    "lint": "echo \"No-ops\" && exit 0"
+    "test": "echo 'No test in this project'",
+    "build": "echo 'No build in this project'",
+    "lint": "echo 'No lint in this project'"
   },
   "license": "MIT",
   "author": "Ephox Corporation DBA Tiny Technologies, Inc.",
