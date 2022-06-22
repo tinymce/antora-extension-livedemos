@@ -1,6 +1,6 @@
 {
   "name": "@tinymce/antora-extension-livedemos",
-  "version": "0.0.1",
+  "version": "0.0.1-rc",
   "description": "Maintains an Antora enxtension which enables live demos for TinyMCE documentation",
   "main": "main.js",
   "scripts": {
