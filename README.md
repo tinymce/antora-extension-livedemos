@@ -1,5 +1,5 @@
 # Antora extension live demos
-This repo maintains an Antora extension which enables live demos for [https://www.tiny.cloud/docs](TinyMCE docs).
+This repo maintains an Antora extension which enables live demos for [TinyMCE docs](https://www.tiny.cloud/docs).
 
 # How to
 1. Install dependency
@@ -43,4 +43,4 @@ When the file is present the live-demo js tab will display the contents of `exam
     - Useful for testing things that aren't in the main channel, yet
     - Remove this setting once the feature is in the main channel
 
-**Note**: Provide optional parameters in coma separated name-value pairs into the square bracket following `id`.
+**Note**: Provide optional parameters in comma separated name-value pairs into the square bracket following `id`.

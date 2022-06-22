@@ -1,7 +1,7 @@
 {
   "name": "@tinymce/antora-extension-livedemos",
   "version": "0.0.1",
-  "description": "Maintains an Antora enxtension which enables live demos for TinyMCE doc (https://www.tiny.cloud/docs)",
+  "description": "Maintains an Antora enxtension which enables live demos for TinyMCE documentation",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
