@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-undef
 tinymce.init({
-  selector: '#hello-world',
+  selector: 'textarea#hello-world',
   plugins: [
     'help'
   ]
