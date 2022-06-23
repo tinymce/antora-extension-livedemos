@@ -1,0 +1,5 @@
+node_modules
+/*.log
+*.sublime-workspace
+package-lock.json
+yarn-error.log

@@ -1,0 +1,36 @@
+{
+  "name": "@tinymce/antora-extension-livedemos",
+  "version": "0.0.1-rc",
+  "description": "An Antora extension which enables live demos for TinyMCE documentation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo 'No test in this project'",
+    "build": "echo 'No build in this project'",
+    "lint": "eslint ."
+  },
+  "license": "MIT",
+  "author": "Ephox Corporation DBA Tiny Technologies, Inc.",
+  "keywords": [
+    "Antora",
+    "extension",
+    "live",
+    "demos",
+    "livedemos",
+    "tinymce",
+    "doc"
+  ],
+  "homepage": "https://github.com/tinymce/antora-extension-livedemos#readme",
+  "bugs": {
+    "url": "https://github.com/tinymce/antora-extension-livedemos/issues"
+  },
+  "dependencies": {
+    "liquidjs": "^9.37.0"
+  },
+  "devDependencies": {
+    "@tinymce/beehive-flow": "^0.18.0",
+    "eslint": "^8.18.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
