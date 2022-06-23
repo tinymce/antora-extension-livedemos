@@ -1,3 +1,4 @@
+/* eslint-disable no-prototype-builtins */
 'use strict';
 
 const { Liquid } = require('liquidjs');
@@ -144,7 +145,7 @@ module.exports.register = (registry, context) => {
       const type = attrs.type || 'tinymce';
       const contentData = loadContent(engine, catalog, target, docAttrs);
       const initialTab = attrs.tab || 'run';
-      const git = attrs.script_url_override || getScript(type, docAttrs);
+      const scriptUrl = attrs.script_url_override || getScript(type, docAttrs);
 
       // Render the template
       const rootCtx = {
