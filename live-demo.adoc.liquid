@@ -85,7 +85,7 @@
   var js = decodeURIComponent("{{ liveDemo.content.js | uri_escape }}");
 
   {% comment %} If style.css provided, add to variable {% endcomment %}
-  {% comment %} set which tabz are shown in on live-demo site {% endcomment %}
+  {% comment %} set which tabs are shown on live-demo site {% endcomment %}
   {% if liveDemo.content.hasCss %}
   var css = decodeURIComponent("{{ liveDemo.content.css | uri_escape }}");
   var tabNames = ["run","html","css","js"];
