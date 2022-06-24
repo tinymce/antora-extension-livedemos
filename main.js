@@ -131,7 +131,6 @@ const loadContent = (engine, catalog, id, docAttrs) => {
   return data;
 };
 
-
 module.exports.register = (registry, context) => {
   const catalog = context.contentCatalog;
   const engine = new Liquid();
