@@ -7,7 +7,6 @@ const path = require('path');
 
 const templateCache = {};
 
-const demoTemplate = 'live-demo.adoc.liquid';
 const validContent = {
   html: 'index.html',
   js: 'index.js',
@@ -135,17 +134,16 @@ const loadContent = (engine, catalog, id, docAttrs) => {
 
 module.exports.register = (registry, context) => {
   const catalog = context.contentCatalog;
+  const engine = new Liquid();
+  engine.registerFilter('uri_escape', (url) => encodeURIComponent(url));
 
-  // Load demo template into cache
-  const filePath = path.resolve(__dirname, demoTemplate);
+  // Load demo template
+  const filePath = path.resolve(__dirname, 'live-demo.adoc.liquid');
   // Take the hard fail approach to stop the build if not able to read the demo template
   const fileContent = fs.readFileSync(filePath, 'utf-8');
-  // Cache the demo template
-  templateCache[filePath] = (new Liquid()).parse(fileContent, filePath);
+  const template = engine.parse(fileContent, filePath);
 
   registry.blockMacro(function() {
-    const engine = new Liquid();
-    engine.registerFilter('uri_escape', (url) => encodeURIComponent(url));
     const scriptsLoaded = {};
 
     const self = this;
@@ -164,7 +162,6 @@ module.exports.register = (registry, context) => {
         component: docAttrs['page-component-name'],
         version: docAttrs['page-component-version'],
       };
-      const template = loadTemplate(engine, catalog, rootCtx, demoTemplate);
       const renderedContent = engine.renderSync(template, {
         liveDemo: {
           ...attrs,
