@@ -132,16 +132,18 @@ const loadContent = (engine, catalog, id, docAttrs) => {
   return data;
 };
 
-/* Load demo template into cache */
-const filePath = path.resolve(__dirname, demoTemplate);
-// Take the hard fail approach to stop the build if not able to read the demo template
-const fileContent = fs.readFileSync(filePath, 'utf-8');
-// Cache the demo template
-templateCache[filePath] = (new Liquid()).parse(fileContent, filePath);
 
 module.exports.register = (registry, context) => {
+  const catalog = context.contentCatalog;
+
+  // Load demo template into cache
+  const filePath = path.resolve(__dirname, demoTemplate);
+  // Take the hard fail approach to stop the build if not able to read the demo template
+  const fileContent = fs.readFileSync(filePath, 'utf-8');
+  // Cache the demo template
+  templateCache[filePath] = (new Liquid()).parse(fileContent, filePath);
+
   registry.blockMacro(function() {
-    const catalog = context.contentCatalog;
     const engine = new Liquid();
     engine.registerFilter('uri_escape', (url) => encodeURIComponent(url));
     const scriptsLoaded = {};
