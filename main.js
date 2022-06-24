@@ -7,7 +7,7 @@ const path = require('path');
 
 const templateCache = {};
 
-const demoTemplate = 'live-doc.adoc.liquid';
+const demoTemplate = 'live-demo.adoc.liquid';
 const validContent = {
   html: 'index.html',
   js: 'index.js',
