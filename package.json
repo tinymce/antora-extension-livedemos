@@ -27,7 +27,7 @@
     "liquidjs": "^9.37.0"
   },
   "devDependencies": {
-    "@tinymce/beehive-flow": "^0.18.0",
+    "@tinymce/beehive-flow": "^0.19.0",
     "eslint": "^8.18.0"
   },
   "publishConfig": {
