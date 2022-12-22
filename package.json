@@ -24,7 +24,7 @@
     "url": "https://github.com/tinymce/antora-extension-livedemos/issues"
   },
   "dependencies": {
-    "liquidjs": "^9.37.0"
+    "liquidjs": "^10.0.0"
   },
   "devDependencies": {
     "@tinymce/beehive-flow": "^0.19.0",
