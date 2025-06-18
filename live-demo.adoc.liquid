@@ -1,7 +1,7 @@
 ++++
 {% comment %} Add cloud script(s) {% endcomment %}
 {%- if liveDemo.script.include -%}
-<script src="{{ liveDemo.script.url }}" referrerpolicy="origin"></script>
+<script src="{{ liveDemo.script.url }}" referrerpolicy="origin" crossorigin="anonymous"></script>
 {%- if liveDemo.css.size > 0 -%}
 <style>
 {{ liveDemo.css }}
